@@ -1,0 +1,363 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    background-image: url(../images/background.png);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 119, 0);
+    font-family: sans-serif;
+    border-bottom: solid 3px black;
+    position: fixed;
+    top: 0;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+label i.material-icons {
+    color: black;
+    font-size: 45px;
+    float: right;
+    line-height: 80px;
+    margin-right: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 80px;
+    margin-left: 25px;
+}
+
+label.logo a {
+    color: black;
+}
+
+main {
+    min-height: 100vh;
+    margin-top: 60px; 
+}
+
+main div.text {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: solid 8px rgb(255, 119, 0);
+    width: 50%;
+    margin: 30px auto 30px;
+}
+
+main div.text p {
+    font-size: 2em;
+    padding: 20px;
+}
+
+main div.text p a {
+    color: white;
+    text-decoration: underline;
+}
+
+iframe {
+    display: block;
+    margin: 10px auto;
+    border: solid 8px rgb(255, 119, 0);
+    border-radius: 15px;
+}
+
+div.gallery {
+    width: 100%;
+}
+
+div.gallery img {
+    width: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: solid 8px rgb(255, 119, 0);
+    display: block;
+}
+
+main ul li {
+    list-style: inside;
+    font-size: 2em;
+    margin-left: 35px;
+}
+
+main h1.phoneNumber {
+    text-align: center;
+    padding: 20px 0 20px;
+}
+
+main h1.phoneNumber a {
+    color: white;
+}
+
+main div.call {
+    background-color: rgb(255, 119, 0);
+    border-radius: 50px;
+    width: 40%;
+    margin: 120px auto 0;
+    border: solid 5px black;
+}
+
+main div.call h1 {
+    font-size: 3em;
+    line-height: 60px;
+}
+
+main div.call h1 a {
+    color: black;
+}
+
+footer {
+    background-color: black;
+    border-top: solid 3px rgb(255, 119, 0);
+    color: white;
+    margin-top: 40px;
+}
+
+footer h1.phoneNumber a {
+    color: white;
+    transition: all .5s;
+}
+
+footer h1.phoneNumber a:hover {
+    color: rgb(255, 119, 0);
+}
+
+footer h1.phoneNumber {
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+footer p.copy {
+    font-size: 1em;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1880px) {
+
+    body {
+        background-image: url(../images/background\ DC\ 4.png);
+    }
+
+}
+
+@media (max-width: 1040px) {
+
+    body {
+        background-image: url(../images/background\ DC\ 5.png);
+    }
+
+}
+
+@media (max-width: 952px) {
+
+    nav {
+        height: 60px;
+    }
+
+    label.logo {
+        font-size: 25px;
+        line-height: 60px;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    main div.text {
+        width: 80%;
+    }
+
+    main div.gallery {
+        width: 100%;
+    }
+
+    main div.gallery img {
+        width: 95%;
+    }
+
+    iframe {
+        width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .mobileOnly {
+        display: inline-block;
+    }
+
+    .largeScreensOnly {
+        display: block;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    label i.material-icons {
+        display: block;
+        line-height: 60px;
+        margin-right: 15px;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 60px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+        background-color: rgb(255, 119, 0);
+        color: white;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    main div.call {
+        width: 250px;
+    }
+
+    main div.call h1 {
+        font-size: 2em;
+    }
+
+}
+
+@media (max-width: 485px) {
+
+    label.logo {
+        font-size: 1.4em;
+    }
+
+    main div.text {
+        width: 95%;
+    }
+
+    main div.text p {
+        font-size: 1.2em;
+    }
+
+    iframe {
+        height: 300px;
+        width: 95%;
+    }
+
+}
+
+/* LARGER SCREENS */
+
+@media (min-width: 1880px) {
+    
+    nav {
+        height: 115px;
+        border-bottom: solid 7px black;
+    }
+
+    nav label.logo {
+        line-height: 120px;
+        font-size: 3em;
+        margin-left: 40px;
+    }
+
+    nav ul {
+        line-height: 120px;
+    }
+
+    nav ul li a {
+        font-size: 2em;
+    }
+
+    main div.call {
+        margin-top: 150px;
+    }
+
+    main div.text p {
+        font-size: 2.8em;
+    }
+
+    footer h1.phoneNumber {
+        font-size: 3em;
+        padding: 30px;
+    }
+
+    footer p.copy {
+        font-size: 2em;
+        padding: 20px;
+    }
+
+}
