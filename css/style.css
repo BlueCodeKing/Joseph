@@ -83,6 +83,8 @@ label.logo a {
     color: black;
 }
 
+/* MAIN */
+
 main {
     min-height: 100vh;
     margin-top: 60px; 
@@ -158,6 +160,8 @@ main div.call h1 a {
     color: black;
 }
 
+/* FOOTER */
+
 footer {
     background-color: black;
     border-top: solid 3px rgb(255, 119, 0);
@@ -184,6 +188,8 @@ footer p.copy {
     padding: 20px;
     text-align: center;
 }
+
+/* MEDIA QUERIES (SMALL SCREENS) */
 
 @media (max-width: 1880px) {
 
@@ -244,8 +250,8 @@ footer p.copy {
     }
 
     .largeScreensOnly {
-        display: block;
-    }
+        display: none;
+    } 
 
     .checkbtn {
         display: block;
@@ -319,7 +325,7 @@ footer p.copy {
 
 }
 
-/* LARGER SCREENS */
+/* MEDIA QUERIES (LARGE SCREENS) */
 
 @media (min-width: 1880px) {
     
